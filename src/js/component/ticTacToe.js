@@ -36,14 +36,14 @@ const TicTacToe = () => {
   return (
     <div className="game">
       {!gameStarted ? (
-        <form className="mb-4">
+        <form className="mb-4 bg-dark">
           <input
             type="text"
             placeholder="jugador 01"
             value={playerX}
             onChange={(e) => setPlayerX(e.target.value)}
             required
-            className="border p-2 mr-2"
+            className="border p-2 mr-2 bg-dark"
           />
           <input
             type="text"
@@ -51,14 +51,14 @@ const TicTacToe = () => {
             value={playerO}
             onChange={(e) => setPlayerO(e.target.value)}
             required
-            className="border p-2 mr-2"
+            className="border p-2 mr-2 bg-dark"
           />
           <div className="mb-2">
             <button
               type="button"
               onClick={() => selectWeapon(true)}
               className={`p-2 ${
-                weaponX ? "bg-blue-500 text-white" : "bg-gray-200"
+                weaponX ? "bg-blue-500 text-warning" : "bg-gray-200 "
               }`}
             >
               X
@@ -67,7 +67,7 @@ const TicTacToe = () => {
               type="button"
               onClick={() => selectWeapon(false)}
               className={`p-2 ${
-                !weaponX ? "bg-blue-500 text-white" : "bg-gray-200"
+                !weaponX ? "bg-blue-500" : "bg-gray-200"
               }`}
             >
               O
