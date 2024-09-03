@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import TicTacToe from "./ticTacToe";
 
-//include images into your bundle
+// Incluye imágenes en tu bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
-//create your first component
 const Home = () => {
-  return <div className="text-center"></div>;
+  return (
+    <div className="text-center">
+      <h1>TicTacToe con React</h1>
+      <TicTacToe />
+    </div>
+  );
 };
 
 export default Home;
